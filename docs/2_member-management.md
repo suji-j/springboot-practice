@@ -50,8 +50,8 @@ public void afterEach() {
 
 - 객체가 의존하는 또 다른 객체를 외부에서 선언하고 이를 주입받아 사용하는 것이다.
 - 의존성 ↓, 재사용성 ↑, 가독성 ↑, 테스트 편리 ↑
-
 - 생성자 이용
+
 ```java
 // MemberService.java
 private final MemberRepository memberRepository;
