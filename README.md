@@ -19,3 +19,4 @@
 
 1. [스프링 웹 개발 기초](docs/1_spring-basics.md)
 2. [회원 관리 예제 - 백엔드 개발](docs/2_member-management.md)
+3. [스프링 빈과 의존 관계](docs/3_spring-bean-overview.md)
