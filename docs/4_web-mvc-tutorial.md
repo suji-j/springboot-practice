@@ -124,3 +124,49 @@ public class MemberController {
 |     캐싱     |        가능 (브라우저, 프록시 서버에서 저장)        |              불가능              |
 | 데이터 길이 제한  |       URL 길이 제한 있음 (2048자 이하)        |           길이 제한 없음            |
 |  주요 사용 예시  |        데이터 조회 (검색, 리스트 조회 등)         | 데이터 생성, 수정, 삭제 (회원가입, 로그인 등)  |
+
+<br/>
+
+#### [3] 회원 웹 기능 - 조회
+
+- 회원 컨트롤러에서 조회 기능
+
+```java
+// MemberController
+@GetMapping("/members")
+public String list(Model model) {
+		List<Member> members = memberService.findMembers();
+		model.addAttribute("members", members);
+		return "members/memberList";
+}
+```
+
+- 회원 리스트 HTML
+
+```html
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div class="container">
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>이름</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="member : ${members}">
+                    <td th:text="${member.id}"></td>
+                    <td th:text="${member.name}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+- 현재 데이터는 메모리에 저장되기 때문에 빌드를 다시 하면 데이터가 전부 사라짐
