@@ -1,8 +1,8 @@
 ## 4. 회원 관리 예제 - 웹 MVC 개발
 
-#### [1] 회원 웹 기능 - 홈 화면 추가
+## [1] 회원 웹 기능 - 홈 화면 추가
 
-* 홈 컨트롤러
+#### 홈 컨트롤러
 
 ```java
 package hello.hello_spring.controller;
@@ -19,7 +19,9 @@ public class HomeController {
 }
 ```
 
-* 회원 관리용 홈
+<br/>
+
+#### 회원 관리용 홈
 
 ```html
 <!doctype html>
@@ -53,9 +55,9 @@ welcome page (정적 콘텐츠)가 있는데 왜 home.html이 우선 순위가 �
 
 <br/>
 
-#### [2] 회원 웹 기능 - 등록
+## [2] 회원 웹 기능 - 등록
 
-* 회원 등록 폼 컨트롤러
+#### 회원 등록 폼 컨트롤러
 ```java
 package hello.hello_spring.controller;
 
@@ -91,8 +93,9 @@ public class MemberController {
     }
 }
 ```
+<br/>
 
-* 회원 등록 폼 HTML (resources/templates/members/createMemberForm)
+#### 회원 등록 폼 HTML (resources/templates/members/createMemberForm)
 ```html
 <!doctype html>
 <html lang="en">
@@ -127,9 +130,9 @@ public class MemberController {
 
 <br/>
 
-#### [3] 회원 웹 기능 - 조회
+## [3] 회원 웹 기능 - 조회
 
-- 회원 컨트롤러에서 조회 기능
+#### 회원 컨트롤러에서 조회 기능
 
 ```java
 // MemberController
@@ -140,8 +143,9 @@ public String list(Model model) {
 		return "members/memberList";
 }
 ```
+<br/>
 
-- 회원 리스트 HTML
+#### 회원 리스트 HTML
 
 ```html
 <!doctype html>
