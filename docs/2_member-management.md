@@ -23,7 +23,7 @@
 
 <br/>
 
-## [1] 회원 리포지토리 메모리 구현체 테스트
+## 1️⃣ 회원 리포지토리 메모리 구현체 테스트
 
 #### 하나의 테스트가 끝날 때마다 데이터를 초기화시켜줘야 한다.
 ‘src/test/java’ 하위 폴더에 생성한다.
@@ -44,7 +44,7 @@ public void afterEach() {
 
 <br/>
 
-## [2] DI (Dependency Injection)
+## 2️⃣ DI (Dependency Injection)
 
 #### 의존 관계 주입
 
