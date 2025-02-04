@@ -1,4 +1,4 @@
-## [1] 스프링 웹 개발 기초
+## 1. 스프링 웹 개발 기초
 
 - 정적 콘텐츠 : 서버에서 하는것없이 보여주는 페이지
 - MVC와 템플릿 엔진 : 컨트롤러, 모델, 뷰 / 정적은 파일을 브라우저에 그대로 전달해줌
@@ -6,9 +6,9 @@
 
 <br/>
 
-### 1. 정적 콘텐츠
+## [1] 정적 콘텐츠
 
-- 스프링부트는 정적콘텐츠를 제공함
+#### 스프링부트는 정적콘텐츠를 제공함
 
 ```html
 # resource/static/hello-static.html
@@ -28,7 +28,7 @@
 ```
 <br/>
 
-### 2. MVC와 템플릿 엔진
+## [2] MVC와 템플릿 엔진
 
 - MVC : Model, View, Controller
 - 컨트롤러랑 뷰를 분리한다.
@@ -36,10 +36,10 @@
 ```java
 // HelloController.java
 @GetMapping("hello-mvc")
-    public String helloMvc(@RequestParam("name") String name, Model model) {
-        model.addAttribute("name", name);
-        return "hello-template";
-    }
+public String helloMvc(@RequestParam("name") String name, Model model) {
+    model.addAttribute("name", name);
+    return "hello-template";
+}
 ```
 
 - 접속 : http://localhost:8080/hello-mvc?name=spring!
@@ -47,9 +47,9 @@
 
 <br/>
 
-### 3. API
+## [3] API
 
-- @ResponseBody 문자 반환
+#### @ResponseBody 문자 반환
 
 ```java
 // HelloController.java
