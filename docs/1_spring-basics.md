@@ -6,7 +6,7 @@
 
 <br/>
 
-## [1] 정적 콘텐츠
+## 1️⃣ 정적 콘텐츠
 
 #### 스프링부트는 정적콘텐츠를 제공함
 
@@ -28,7 +28,7 @@
 ```
 <br/>
 
-## [2] MVC와 템플릿 엔진
+## 2️⃣ MVC와 템플릿 엔진
 
 - MVC : Model, View, Controller
 - 컨트롤러랑 뷰를 분리한다.
@@ -47,7 +47,7 @@ public String helloMvc(@RequestParam("name") String name, Model model) {
 
 <br/>
 
-## [3] API
+## 3️⃣ API
 
 #### @ResponseBody 문자 반환
 
