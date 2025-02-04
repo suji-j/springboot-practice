@@ -48,7 +48,6 @@ public class HomeController {
 </html>
 ```
 
-
 welcome page (정적 콘텐츠)가 있는데 왜 home.html이 우선 순위가 높을까?
 
 → 요청이 오면 스프링 컨트롤러가 “관련 컨트롤러가 있는지 먼저 찾고” 없으면 정적 파일을 찾도록 되어 있다.
